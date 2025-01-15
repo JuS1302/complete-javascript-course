@@ -386,4 +386,51 @@ console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bil
 
 // Javascript releases: ES5, ES6+ and ESNEXT
 
+// ---------------------------------------------
+
+// Strict mode
+
+// sécuriser le code et éviter les bugs
+
+// pour aciver le mode strict il faut écrire cette phrase en début de code
+
+'use strict';
+
+//----------------------------------------------------
+
+// functions
+
+// morceau de code que nous pour réutiliser dans notre code
+
+// un variable contient une valeur, une fonction contient plusieurs lignes de code
+
+function logger() {
+    console.log('My name is Jonas');
+}
+
+// on appelle la fonction
+logger();
+
+// une fonction reçoit des données et retourne des données
+
+function fruitProcessor(apples, oranges) {
+    // console.log(apples, oranges)
+    const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+    return juice;
+}
+
+// pour créer un jus de pomme
+const appleJuice = fruitProcessor(5, 0);
+
+// pour créer un multifruits
+const multiJuice = fruitProcessor(3, 3);
+
+//----------------------------------------------------
+
+// Function declarations vs expressions
+
+function calcAge1(birthYear) {
+    return age - birthYear;
+}
+
 
